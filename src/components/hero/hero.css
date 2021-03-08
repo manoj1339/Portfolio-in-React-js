@@ -1,0 +1,74 @@
+.hero-section{
+    position: relative;
+    height: 100vh;
+}
+
+.hero-section .faded-name h1{
+    position: absolute;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30rem;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.headline{
+    height: 100vh;
+}
+
+.headline h1{
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 190px;
+}
+
+.headline h1 span{
+    background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-pic{
+    margin-top: 140px;
+}
+
+.profile-pic svg{
+    display: block;
+    margin: 0 auto;
+}
+
+#big-cog{
+    animation: spin 4s linear infinite reverse;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+#small-cog{
+    animation: spin 2s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes spin{
+    from{
+        transform: translate(-195px, 700px) rotate(0deg);
+    }
+    to{
+        transform: translate(-195px, 700px) rotate(360deg);
+    }
+}
+
+#without-background{
+    animation: slide 2s ease infinite alternate;
+}
+
+@keyframes slide{
+    from{
+        transform: translate(0px, -50px);
+    }
+    from{
+        to: translate(0px, 100px);
+    }
+}

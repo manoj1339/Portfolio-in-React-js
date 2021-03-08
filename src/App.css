@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kanit&display=swap');
+
+:root{
+  --primary-color: #ff8901;
+  --secondary-color: #e52e71;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html{
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html::-webkit-scrollbar{
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+  background: #000;
+  box-shadow: inset 0px 0px 15px #ccc;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar-corner{
+  background: #ccc;
+  border-radius: 5px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: black;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Kanit', sans-serif;
+  color: #fff;
 }
